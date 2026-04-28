@@ -67,51 +67,7 @@
           <fieldset>
             <legend>Location Details</legend>
             <label for="country">Country <span>*</span></label>
-            <select id="country" name="country" required>
-              <option value="">Select country</option>
-              <option>Nigeria</option>
-              <option>UAE</option>
-              <option>USA</option>
-              <option>UK</option>
-              <option>Other</option>
-            </select>
-
-            <label for="city">City (Optional)</label>
-            <input id="city" name="city" type="text" />
-
-            <label for="timezone">Time Zone <span>*</span></label>
-            <select id="timezone" name="timezone" required>
-              <option value="">Select time zone</option>
-              <option value="auto">Auto-detected</option>
-              <option value="Africa/Lagos">Africa/Lagos (WAT)</option>
-              <option value="Asia/Shanghai">Asia/Shanghai (CST)</option>
-              <option value="Europe/London">Europe/London (UK)</option>
-              <option value="America/New_York">America/New_York (EST/EDT)</option>
-              <option value="Asia/Dubai">Asia/Dubai (UAE)</option>
-            </select>
-          </fieldset>
-
-          <fieldset>
-            <legend>Participation Details</legend>
-            <p class="group-label">Preferred Session Time <span>*</span></p>
-            <label class="radio">
-              <input type="radio" name="sessionTime" value="1PM (WAT – Nigeria)" required />
-              <span>1PM (WAT – Nigeria)</span>
-            </label>
-            <label class="radio">
-              <input type="radio" name="sessionTime" value="8PM (CST – China/Asia)" />
-              <span>8PM (CST – China/Asia)</span>
-            </label>
-
-            <label for="source">How did you hear about this event? <span>*</span></label>
-            <select id="source" name="source" required>
-              <option value="">Select one</option>
-              <option>Social Media</option>
-              <option>Email</option>
-              <option>Referral</option>
-              <option>Website</option>
-              <option>Other</option>
-            </select>
+            <input id="country" name="country" type="text" placeholder="Type your country" required />
           </fieldset>
 
           <fieldset>
@@ -182,6 +138,14 @@
           Thank you for registering for <strong>Introduction to Real Estate Investment</strong>.
           Your access link will be sent to your email shortly.
         </p>
+        <a
+          class="community-btn"
+          href="https://chat.whatsapp.com/BxhR8cvLXfeJkhuqCIaXQY"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Join the Community
+        </a>
         <div class="calendar-actions">
           <a id="googleCalendarLink" target="_blank" rel="noopener noreferrer">Add to Google Calendar</a>
           <a id="icsDownloadLink" download="real-estate-investment-session.ics">Download Calendar Invite (.ics)</a>

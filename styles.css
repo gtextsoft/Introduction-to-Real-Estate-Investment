@@ -215,6 +215,20 @@ select[multiple] {
   margin-top: 0;
 }
 
+.community-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.7rem 1.05rem;
+  margin-bottom: 0.9rem;
+  background: #25d366;
+  color: #fff;
+  border: 1px solid #20b85a;
+}
+
 .calendar-actions {
   display: flex;
   flex-wrap: wrap;

@@ -4,18 +4,6 @@ const formSection = document.getElementById("formSection");
 const successSection = document.getElementById("successSection");
 const googleCalendarLink = document.getElementById("googleCalendarLink");
 const icsDownloadLink = document.getElementById("icsDownloadLink");
-const timezoneSelect = document.getElementById("timezone");
-
-function prefillTimezone() {
-  const detected = Intl.DateTimeFormat().resolvedOptions().timeZone;
-  if (!detected) return;
-
-  const optionExists = Array.from(timezoneSelect.options).some(
-    (opt) => opt.value === detected
-  );
-
-  timezoneSelect.value = optionExists ? detected : "auto";
-}
 
 function buildCalendarDetails(sessionValue) {
   const title = "Introduction to Real Estate Investment";
@@ -107,4 +95,3 @@ registrationForm.addEventListener("submit", async (event) => {
   successSection.scrollIntoView({ behavior: "smooth", block: "start" });
 });
 
-prefillTimezone();
