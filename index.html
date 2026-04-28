@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to Real Estate Investment | Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <p class="eyebrow">Stephen Akintayo Foundation</p>
+        <h1>Introduction to Real Estate Investment</h1>
+        <p class="subtext">
+          Things to know about investment in Real Estate (Dubai, America, UK
+          and Nigeria)
+        </p>
+        <div class="hero-badges">
+          <div class="badge">
+            <span class="label">Date</span>
+            <span>May 2nd, 2026</span>
+          </div>
+          <div class="badge">
+            <span class="label">Time</span>
+            <span>1PM (WAT) / 8PM (CST)</span>
+          </div>
+          <div class="badge accent">
+            <span class="label">Ticket</span>
+            <span>Free for first 500, then $500</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-card" id="formSection">
+        <h2>Register Now</h2>
+        <p class="form-intro">
+          Complete the form below to secure your slot for this session.
+        </p>
+
+        <form
+          id="registrationForm"
+          action="https://formspree.io/f/xyklryrp"
+          method="POST"
+          novalidate
+        >
+          <fieldset>
+            <legend>Basic Information</legend>
+            <label for="fullName">Full Name <span>*</span></label>
+            <input id="fullName" name="fullName" type="text" required />
+
+            <label for="email">Email Address <span>*</span></label>
+            <input id="email" name="email" type="email" required />
+
+            <label for="phone">Phone Number (Optional)</label>
+            <input id="phone" name="phone" type="tel" placeholder="+234 816 790 1719" />
+
+            <label for="whatsapp">WhatsApp Number (Required, include country code) <span>*</span></label>
+            <input id="whatsapp" name="whatsapp" type="tel" placeholder="+234 000 000 0000" required />
+          </fieldset>
+
+          <fieldset>
+            <legend>Location Details</legend>
+            <label for="country">Country <span>*</span></label>
+            <select id="country" name="country" required>
+              <option value="">Select country</option>
+              <option>Nigeria</option>
+              <option>UAE</option>
+              <option>USA</option>
+              <option>UK</option>
+              <option>Other</option>
+            </select>
+
+            <label for="city">City (Optional)</label>
+            <input id="city" name="city" type="text" />
+
+            <label for="timezone">Time Zone <span>*</span></label>
+            <select id="timezone" name="timezone" required>
+              <option value="">Select time zone</option>
+              <option value="auto">Auto-detected</option>
+              <option value="Africa/Lagos">Africa/Lagos (WAT)</option>
+              <option value="Asia/Shanghai">Asia/Shanghai (CST)</option>
+              <option value="Europe/London">Europe/London (UK)</option>
+              <option value="America/New_York">America/New_York (EST/EDT)</option>
+              <option value="Asia/Dubai">Asia/Dubai (UAE)</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend>Participation Details</legend>
+            <p class="group-label">Preferred Session Time <span>*</span></p>
+            <label class="radio">
+              <input type="radio" name="sessionTime" value="1PM (WAT – Nigeria)" required />
+              <span>1PM (WAT – Nigeria)</span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="sessionTime" value="8PM (CST – China/Asia)" />
+              <span>8PM (CST – China/Asia)</span>
+            </label>
+
+            <label for="source">How did you hear about this event? <span>*</span></label>
+            <select id="source" name="source" required>
+              <option value="">Select one</option>
+              <option>Social Media</option>
+              <option>Email</option>
+              <option>Referral</option>
+              <option>Website</option>
+              <option>Other</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend>Investment Experience</legend>
+            <p class="group-label">Do you currently invest in real estate? <span>*</span></p>
+            <label class="radio">
+              <input type="radio" name="currentlyInvest" value="Yes" required />
+              <span>Yes</span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="currentlyInvest" value="No" />
+              <span>No</span>
+            </label>
+
+            <label for="experience">Your level of experience <span>*</span></label>
+            <select id="experience" name="experience" required>
+              <option value="">Select level</option>
+              <option>Beginner</option>
+              <option>Intermediate</option>
+              <option>Advanced</option>
+            </select>
+
+            <label for="markets">What markets are you interested in? <span>*</span></label>
+            <select id="markets" name="markets" multiple required>
+              <option>Dubai</option>
+              <option>USA</option>
+              <option>UK</option>
+              <option>Nigeria</option>
+            </select>
+            <small class="hint">Hold Ctrl (or Cmd on Mac) to select multiple.</small>
+          </fieldset>
+
+          <fieldset>
+            <legend>Expectations</legend>
+            <label for="expectations">What do you hope to learn from this session? <span>*</span></label>
+            <textarea id="expectations" name="expectations" rows="4" required></textarea>
+          </fieldset>
+
+          <fieldset>
+            <legend>Payment Section</legend>
+            <label for="ticketType">Ticket Type <span>*</span></label>
+            <select id="ticketType" name="ticketType" required>
+              <option value="Free (First 500 Registrations)">Free (First 500 Registrations)</option>
+              <option value="Paid ($500)">Paid ($500)</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend>Consent & Confirmation</legend>
+            <label class="checkbox">
+              <input type="checkbox" id="updatesConsent" name="updatesConsent" required />
+              <span>I agree to receive updates and event details via email/WhatsApp</span>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" id="paymentConsent" name="paymentConsent" required />
+              <span>I understand this is a paid event after the first 500 free slots</span>
+            </label>
+          </fieldset>
+
+          <button type="submit" class="submit-btn">Register Now</button>
+          <p class="error-message" id="errorMessage" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="success-card hidden" id="successSection" aria-live="polite">
+        <h2>Registration Confirmed</h2>
+        <p>
+          Thank you for registering for <strong>Introduction to Real Estate Investment</strong>.
+          Your access link will be sent to your email shortly.
+        </p>
+        <div class="calendar-actions">
+          <a id="googleCalendarLink" target="_blank" rel="noopener noreferrer">Add to Google Calendar</a>
+          <a id="icsDownloadLink" download="real-estate-investment-session.ics">Download Calendar Invite (.ics)</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

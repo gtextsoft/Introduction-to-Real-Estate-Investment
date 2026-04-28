@@ -1,0 +1,255 @@
+:root {
+  --brand-blue: #021a74;
+  --brand-blue-soft: #0d2b9f;
+  --brand-gold: #f0cd92;
+  --brand-gold-dark: #c59a5a;
+  --text-light: #f8f5ed;
+  --card-bg: #ffffff;
+  --text-dark: #121212;
+  --danger: #d32f2f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", Arial, sans-serif;
+  color: var(--text-dark);
+  background: radial-gradient(circle at top right, #1239c4 0%, var(--brand-blue) 42%, #020f4d 100%);
+  min-height: 100vh;
+}
+
+.page {
+  width: min(1080px, 94%);
+  margin: 0 auto;
+  padding: 2rem 0 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.hero {
+  color: var(--text-light);
+  background: linear-gradient(135deg, rgba(12, 30, 111, 0.92), rgba(3, 16, 70, 0.92));
+  border: 1px solid rgba(240, 205, 146, 0.3);
+  border-radius: 18px;
+  padding: 2rem;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.3);
+}
+
+.eyebrow {
+  color: var(--brand-gold);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 0 0.7rem;
+  font-size: 0.85rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.9rem, 3.2vw, 2.8rem);
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.subtext {
+  margin-top: 0.85rem;
+  margin-bottom: 1.1rem;
+  max-width: 760px;
+  color: #f0eadf;
+  font-size: 1.05rem;
+}
+
+.hero-badges {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 0.8rem;
+}
+
+.badge {
+  background: rgba(240, 205, 146, 0.14);
+  border: 1px solid rgba(240, 205, 146, 0.45);
+  border-radius: 10px;
+  padding: 0.8rem 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-weight: 600;
+}
+
+.badge .label {
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  color: var(--brand-gold);
+  letter-spacing: 0.09em;
+}
+
+.badge.accent {
+  background: rgba(197, 154, 90, 0.22);
+}
+
+.form-card,
+.success-card {
+  background: var(--card-bg);
+  border-radius: 18px;
+  padding: 1.6rem;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0.45rem;
+  color: var(--brand-blue);
+}
+
+.form-intro {
+  margin-top: 0;
+  margin-bottom: 1.1rem;
+}
+
+fieldset {
+  border: 1px solid #dbe1f5;
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 0 0 0.95rem;
+}
+
+legend {
+  color: var(--brand-blue-soft);
+  font-weight: 700;
+  padding: 0 0.3rem;
+}
+
+label,
+.group-label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+span {
+  vertical-align: middle;
+}
+
+label span:first-child,
+.group-label span {
+  color: var(--danger);
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border: 1px solid #c9d1e8;
+  border-radius: 8px;
+  padding: 0.65rem 0.75rem;
+  font: inherit;
+  margin-bottom: 0.8rem;
+  background: #fff;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid rgba(13, 43, 159, 0.22);
+  border-color: var(--brand-blue-soft);
+}
+
+select[multiple] {
+  min-height: 110px;
+}
+
+.radio,
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0 0 0.65rem;
+  font-weight: 500;
+}
+
+.radio input,
+.checkbox input {
+  width: auto;
+  margin: 0;
+}
+
+.hint {
+  display: block;
+  margin-top: -0.4rem;
+  margin-bottom: 0.75rem;
+  color: #4f5c87;
+}
+
+.submit-btn {
+  width: 100%;
+  border: none;
+  border-radius: 999px;
+  padding: 0.9rem 1rem;
+  font: inherit;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #151515;
+  background: linear-gradient(135deg, var(--brand-gold), var(--brand-gold-dark));
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.error-message {
+  color: var(--danger);
+  font-weight: 600;
+  min-height: 1.2rem;
+  margin-bottom: 0;
+}
+
+.success-card p {
+  margin-top: 0;
+}
+
+.calendar-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.calendar-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.65rem 1rem;
+  border: 1px solid var(--brand-blue-soft);
+  color: var(--brand-blue-soft);
+}
+
+.calendar-actions a:first-child {
+  background: var(--brand-blue-soft);
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .page {
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: start;
+  }
+
+  .hero {
+    position: sticky;
+    top: 1rem;
+  }
+}
